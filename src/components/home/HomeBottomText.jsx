@@ -14,7 +14,7 @@ const HomeBottomText = () => {
         to="/agence"
         className="text-[5.5vw] leading-[6vw] hover:border-green-400 hover:text-green-400 uppercase border-2 border-white rounded-full px-10 py-0 pt-1 pb-0"
       >
-        About
+        Agence
       </Link>
     </div>
   );
