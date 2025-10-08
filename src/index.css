@@ -2,11 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
-    font-family:font1;
-    src:url(C:\Users\rudra\Desktop\React-website\src\fonts\Lausanne-300.woff2);
+@font-face {
+  font-family: "font1";
+  src: url("./fonts/Lausanne-300.woff2") format("woff2");
 }
-@font-face{
-    font-family:font2;
-    src:url(C:\Users\rudra\Desktop\React-website\src\fonts\Lausanne-500.woff2);
+
+@font-face {
+  font-family: "font2";
+  src: url("./fonts/Lausanne-500.woff2") format("woff2");
+}
+
+.moveX {
+  animation-name: moveAnimation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: all ease 0.3s;
+}
+
+.moveLink {
+  opacity: 0;
+  z-index: 10;
+  top: 0;
+}
+
+.link:hover .moveLink {
+  opacity: 1;
+}
+
+/* .link h1 {
+  position: relative;
+  z-index: 0;
+} */
+
+@keyframes moveAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }

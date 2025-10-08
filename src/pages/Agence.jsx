@@ -28,7 +28,7 @@ const Agence = () => {
       scrollTrigger: {
         trigger: imageDivRef.current,
         markers: true,
-        start: "top 55.25%",
+        start: "top 35%",
         end: "top -70%",
         pin: true,
         pinSpacing:true,
