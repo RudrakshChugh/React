@@ -8,14 +8,14 @@ import FullScreenNav from './components/Navigation/FullScreenNav'
 
 const App = () => {
   return (
-    <div className="text-white">
-      {/* <Navbar/> */}
+    <div className="text-white overflow-x-hidden">
+      <Navbar/>
       <FullScreenNav/>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/agence" element={<Agence />} />
         <Route path="/projects" element={<Projects />} />
-      </Routes> */}
+      </Routes>
     </div>
   )
 }
